@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead16738e0268ea4eb87728cc76b17b9, type: 3}
+  m_Name: Arctic
+  m_EditorClassIdentifier: 
+  _animals:
+  - {fileID: 2293612155437620518, guid: 769f4cac2f0664adba45679bf789e956, type: 3}
+  - {fileID: 4118078330782351803, guid: 993863625c9d94f5e80e58e4de9c8057, type: 3}
+  - {fileID: 4786936249477842465, guid: 715091db335664eb4a669e3678ee8793, type: 3}
+  - {fileID: 6021072356116227959, guid: ab3ac26cb44ed4753963eeabc254b902, type: 3}
+  - {fileID: 3353162921318055703, guid: 0c32838ba57fe4395899fdbf52247f59, type: 3}
