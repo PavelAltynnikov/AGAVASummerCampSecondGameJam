@@ -9,7 +9,8 @@ public class CameraFlight : MonoBehaviour
 
     [Header("Flight key points")]
     [SerializeField] private Transform startTransform;
-    [SerializeField] private Transform finalTransform;
+    [SerializeField] private Transform finalTransformPerspective;
+    [SerializeField] private Transform finalTransformOrthographic;
 
     [Header("Flight parameters")]
     [SerializeField] private float flightSpeed;
@@ -23,10 +24,12 @@ public class CameraFlight : MonoBehaviour
 
     private void OnEnable() {
         whenCameraOnPosition += ReturnPlayability;
+        whenCameraOnPosition += ChangeCameraRotation;
     }
 
     private void OnDisable() {
         whenCameraOnPosition -= ReturnPlayability;
+        whenCameraOnPosition -= ChangeCameraRotation;
     }
 
     private void Start() 
@@ -49,12 +52,11 @@ public class CameraFlight : MonoBehaviour
     private IEnumerator Flight() 
     {
         //Нужно добавить скрытие интерфейса
-        while (Vector3.Distance(camera.transform.position, finalTransform.position) > 0.5f) {
-            camera.transform.position = Vector3.Lerp(camera.transform.position,finalTransform.position, flightSpeed * Time.deltaTime);
+        while (Vector3.Distance(camera.transform.position, finalTransformPerspective.position) > 0.5f) {
+            camera.transform.position = Vector3.Lerp(camera.transform.position,finalTransformPerspective.position, flightSpeed * Time.deltaTime);
             flightSpeed += flightSpeedAcceleration;
             yield return new WaitForSeconds(0.01f);
         }
-        camera.orthographic = true;
         whenCameraOnPosition?.Invoke();
     }
 
@@ -68,5 +70,11 @@ public class CameraFlight : MonoBehaviour
         //Тут показываем интерфейс и даём возможность играть
         gameInterface.enabled = true;
         _input.IsON = true;
+    }
+
+    private void ChangeCameraRotation() {
+        Transform cameraTransform = camera.transform;
+        camera.orthographic = true;
+        CopyTransform(ref cameraTransform, finalTransformOrthographic);
     }
 }
