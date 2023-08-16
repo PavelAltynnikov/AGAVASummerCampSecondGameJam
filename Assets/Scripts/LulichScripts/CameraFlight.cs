@@ -13,6 +13,7 @@ public class CameraFlight : MonoBehaviour
 
     [Header("Flight parameters")]
     [SerializeField] private float flightSpeed;
+    [SerializeField] private float flightSpeedAcceleration;
 
     [Header("Scene objects")]
     [SerializeField] private Canvas gameInterface;
@@ -50,6 +51,7 @@ public class CameraFlight : MonoBehaviour
         //Нужно добавить скрытие интерфейса
         while (Vector3.Distance(camera.transform.position, finalTransform.position) > 0.5f) {
             camera.transform.position = Vector3.Lerp(camera.transform.position,finalTransform.position, flightSpeed * Time.deltaTime);
+            flightSpeed += flightSpeedAcceleration;
             yield return new WaitForSeconds(0.01f);
         }
         camera.orthographic = true;
