@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964152, b: 0.57481873, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657886, g: 0.49641556, b: 0.5748193, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1092,13 +1092,13 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u041D\u0435\u0442..."
+    Text: "\u041D\u0435 \u0442\u043E\u0442 \u043E\u0442\u0440\u044F\u0434!"
     Object: {fileID: 0}
   - Language: English
-    Text: No...
+    Text: Not that squad!
     Object: {fileID: 0}
   - Language: Turkish
-    Text: "Hay\u0131r..."
+    Text: "O kadro de\u011Fil!"
     Object: {fileID: 0}
 --- !u!4 &477542905 stripped
 Transform:
@@ -1390,13 +1390,13 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u041D\u0435\u0443\u0434\u0430\u0447\u0430"
+    Text: "\u041C\u0438\u043C\u043E"
     Object: {fileID: 0}
   - Language: English
-    Text: Fail
+    Text: Miss
     Object: {fileID: 0}
   - Language: Turkish
-    Text: "ba\u015Far\u0131s\u0131zl\u0131k"
+    Text: "Kay\u0131p"
     Object: {fileID: 0}
 --- !u!1 &640189749
 GameObject:
@@ -1445,7 +1445,7 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u041F\u043B\u043E\u0445\u043E"
+    Text: "\u041D\u0435 \u0442\u0443\u0434\u0430"
     Object: {fileID: 0}
   - Language: English
     Text: Bad
@@ -1702,13 +1702,13 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C {LevelNumber}"
+    Text: "\u0411\u0438\u0442\u0432\u0430 {LevelNumber}"
     Object: {fileID: 0}
   - Language: English
-    Text: Level {LevelNumber}
+    Text: Battle {LevelNumber}
     Object: {fileID: 0}
   - Language: Turkish
-    Text: "D\xFCzey {LevelNumber}"
+    Text: "Sava\u015F {SeviyeNumaras\u0131}"
     Object: {fileID: 0}
 --- !u!114 &678317428 stripped
 MonoBehaviour:
@@ -3061,7 +3061,7 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u041F\u0440\u043E\u0432\u0430\u043B\u0435\u043D"
+    Text: "\u041F\u0440\u043E\u0438\u0433\u0440\u0430\u043D\u0430"
     Object: {fileID: 0}
   - Language: English
     Text: Failed
@@ -3116,13 +3116,13 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u0412\u0430\u0443!"
+    Text: "\u0414\u0430!"
     Object: {fileID: 0}
   - Language: English
-    Text: Wow!
+    Text: Yes!
     Object: {fileID: 0}
   - Language: Turkish
-    Text: Vay!
+    Text: Evet!
     Object: {fileID: 0}
 --- !u!1 &1112090488
 GameObject:
@@ -3443,13 +3443,14 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u041E\u0442\u0441\u043E\u0440\u0442\u0438\u0440\u0443\u0439 \u0436\u0438\u0432\u043E\u0442\u043D\u044B\u0445!"
+    Text: "\u0420\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0438 \u0432\u043E\u0438\u043D\u043E\u0432
+      \u043F\u043E \u043E\u0442\u0440\u044F\u0434\u0430\u043C!"
     Object: {fileID: 0}
   - Language: English
-    Text: Sort animals!
+    Text: Divide the warriors into squads!
     Object: {fileID: 0}
   - Language: Turkish
-    Text: "Hayvanlar\u0131 s\u0131rala!"
+    Text: "Sava\u015F\xE7\u0131lar\u0131 tak\u0131mlara ay\u0131r\u0131n!"
     Object: {fileID: 0}
 --- !u!1 &1358803931
 GameObject:
@@ -5543,7 +5544,7 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u0417\u0430\u0432\u0435\u0440\u0448\u0435\u043D"
+    Text: "\u0417\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0430"
     Object: {fileID: 0}
   - Language: English
     Text: Completed
@@ -6013,12 +6014,12 @@ PrefabInstance:
     - target: {fileID: 236631744151005187, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 236631744151005187, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 236631744151005187, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
@@ -6028,12 +6029,12 @@ PrefabInstance:
     - target: {fileID: 236631744151005187, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 662.1118
+      value: 876.5138
       objectReference: {fileID: 0}
     - target: {fileID: 236631744151005187, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -63.15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 236631744169539305, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
@@ -6073,12 +6074,12 @@ PrefabInstance:
     - target: {fileID: 236631744841651299, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 236631744841651299, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 236631744841651299, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
@@ -6088,12 +6089,12 @@ PrefabInstance:
     - target: {fileID: 236631744841651299, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 662.11176
+      value: 876.51373
       objectReference: {fileID: 0}
     - target: {fileID: 236631744841651299, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -199.45001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 236631744985195007, guid: aa173dd1ba8c4bc4e9e7de080eaa8ca2,
         type: 3}
