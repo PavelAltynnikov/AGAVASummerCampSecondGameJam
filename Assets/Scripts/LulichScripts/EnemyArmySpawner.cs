@@ -49,7 +49,7 @@ public class EnemyArmySpawner : MonoBehaviour
                 currEnemiesNumberInRow = 0;
             }
 
-            int rand = Random.Range(0, enemiesPrefabs.Count - 1);
+            int rand = Random.Range(0, enemiesPrefabs.Count);
             Animal enemy = Instantiate(enemiesPrefabs[rand], currentPos, Quaternion.identity);
             _enemies.Add(enemy);
 
