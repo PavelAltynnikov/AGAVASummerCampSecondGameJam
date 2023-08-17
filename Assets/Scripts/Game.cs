@@ -25,6 +25,9 @@ public class Game : MonoBehaviour
     [SerializeField] private List<LevelType> _levelTypes;
     [SerializeField] private Leaderboard _totalScoreLeaderboard;
     [SerializeField] private LeanToken _levelToken;
+    [SerializeField] private Transform _battlePoint;
+    [SerializeField] private EnemyArmySpawner _enemySpawner;
+    [SerializeField] private ParticleSystem[] _clouds;
 
     private Aviary _lastAviary;
     private int _level;
@@ -199,6 +202,15 @@ public class Game : MonoBehaviour
             item.Play();
 
         yield return new WaitForSeconds(0.1f);
+
+        // TODO вот тут перед выводом UI надо запускать войска.
+        StartCoroutine(nameof(MoveOurArmy), _battlePoint.position);
+        _enemySpawner.MoveEnemyArmy(_battlePoint.position);
+        foreach (ParticleSystem cloud in _clouds)
+        {
+            cloud.Play();
+        }
+
         _doneScreen.Appear(_score.Value, _level);
         DB.AddScore(_score.Value);
         DB.IncreaseLevel();
@@ -213,6 +225,20 @@ public class Game : MonoBehaviour
             else
                 Agava.YandexGames.Leaderboard.SetScore(_totalScoreLeaderboard.Name, _score.Value);
         });
+    }
+
+    private void MoveOurArmy(Vector3 endPoint)
+    {
+        var offset = new Vector3(0, 0, 20);
+
+        foreach (Aviary aviary in _aviaries)
+        {
+            foreach (Animal animal in aviary.Animals)
+            {
+                Vector3 targetPoint = endPoint + offset + animal.transform.position;
+                animal.Go(targetPoint, 2f);
+            }
+        }
     }
 
     private IEnumerator MovePlusText(PopupText plusText, float delay, int score)

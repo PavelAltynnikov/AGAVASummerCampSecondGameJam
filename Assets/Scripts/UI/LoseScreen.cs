@@ -32,7 +32,7 @@ public class LoseScreen : MonoBehaviour
         });
 
         float delay = 0.2f;
-        _levetText.Show("Óðîâåíü " + level.ToString());
+        _levetText.Show("Ð£Ñ€Ð¾Ð²ÐµÐ½ÑŒ " + level.ToString());
         _timer.WaitFor(delay).Then(() =>
         {
             _title.Show();
