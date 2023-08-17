@@ -33,6 +33,15 @@ public class EnemyArmySpawner : MonoBehaviour
             Vector3 targetPoint = enemy.transform.position - endPoint - offset;
             enemy.Go(targetPoint, 2f);
         }
+        foreach (Animal enemy in _enemies)
+        {
+            enemy.gameObject.transform.rotation = new Quaternion(0f,0f,0f,0f);
+            var animationsScript1 = enemy.gameObject.GetComponent<DoubleAxeSkeleton>();
+            animationsScript1?.Attack();
+            
+            var animationsScript2 = enemy.gameObject.GetComponent<SwordSkeleton>();
+            animationsScript2?.Attack();
+        }
     }
 
     private void Awake() {

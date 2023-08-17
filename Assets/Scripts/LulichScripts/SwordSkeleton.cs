@@ -10,20 +10,20 @@ public class SwordSkeleton : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController idle;
     [SerializeField] private Animator skeletonAnimator;
 
-    private void TakeDamage() {
+    public void TakeDamage() {
         skeletonAnimator.runtimeAnimatorController = damage;
     }
 
-    private void Attack() {
+    public void Attack() {
         skeletonAnimator.runtimeAnimatorController = attack;
     }
 
-    private void Walk() {
+    public void Walk() {
         //Добавить логику ходьбы
         skeletonAnimator.runtimeAnimatorController = walk;
     }
 
-    private void SetAnIdleAnimation() {
+    public void SetAnIdleAnimation() {
         skeletonAnimator.runtimeAnimatorController = idle;
     }
 }
