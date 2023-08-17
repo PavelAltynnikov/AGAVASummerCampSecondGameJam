@@ -19,11 +19,11 @@ public class EnemyArmySpawner : MonoBehaviour
     private void Awake() {
         currentPos = startPos;
 
-        StartCoroutine("SpawnEnemies");
+        SpawnEnemies();
     }
 
-    private IEnumerator SpawnEnemies() {
-        while(overallEnemiesNumber > 0) {
+    private void SpawnEnemies() {
+        for (int i = 0; i < overallEnemiesNumber; i++) {
             if (currEnemiesNumberInRow == maxEnemiesInRow) {
                 currentPos.z -= ZAxisStep;
                 currentPos.x = startPos.x;
@@ -33,8 +33,6 @@ public class EnemyArmySpawner : MonoBehaviour
             Instantiate(enemiesPrefabs[rand], currentPos, Quaternion.identity);
             currentPos.x += XAxisStep;
             currEnemiesNumberInRow++;
-            overallEnemiesNumber--;
-            yield return new WaitForSeconds(0.01f);
         }
     }
 }
