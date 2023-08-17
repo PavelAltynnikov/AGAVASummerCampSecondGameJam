@@ -79,7 +79,9 @@ public class Aviary : MonoBehaviour
             node.Deselect();
             node.Clear();
         }
+#if false
         OpenDoor();
+#endif
 
         bool inOtherAviary = false;
         Aviary[] aviaries = FindObjectsOfType<Aviary>();
@@ -221,10 +223,14 @@ public class Aviary : MonoBehaviour
 
         MoveAnimals(-count * _movePerAnimal);
 
+#if false
         OpenDoor();
+#endif
         _promiseTimer.WaitFor(1f).Then(() =>
         {
+#if false
             CloseDoor();
+#endif
         });
 
         ReleasedAnimals?.Invoke(animals);
