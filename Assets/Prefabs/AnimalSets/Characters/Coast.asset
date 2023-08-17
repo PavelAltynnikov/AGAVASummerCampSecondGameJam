@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead16738e0268ea4eb87728cc76b17b9, type: 3}
+  m_Name: Coast
+  m_EditorClassIdentifier: 
+  _animals:
+  - {fileID: -3730223078885084259, guid: 658cbde5d3192634f803695dc806cfab, type: 3}
+  - {fileID: -7606167519202547714, guid: b163187f9832fcd488c255c3c953ac43, type: 3}
+  - {fileID: 954487706610646240, guid: 99d5307185040d84898f6ff859fefbe4, type: 3}
+  - {fileID: -7510892887794688516, guid: 9e8ea11eb333aa44a81039d32dde1db9, type: 3}
+  - {fileID: -4417665900012254799, guid: 48a644db8a3940342a72ec2f6a0be668, type: 3}
