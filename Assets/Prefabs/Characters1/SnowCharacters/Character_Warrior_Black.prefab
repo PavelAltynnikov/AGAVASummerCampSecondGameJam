@@ -3153,8 +3153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 1
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
-  outlineWidth: 1
+  outlineColor: {r: 0.11320752, g: 0.070914894, b: 0.070914894, a: 1}
+  outlineWidth: 6
   _stancilID: 1
   precomputeOutline: 0
   bakeKeys: []
@@ -3171,7 +3171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56c0e1ae5cf34b24b02022f8264fd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 4
+  _id: 19
   _countColor: {r: 0.01778212, g: 0.1822195, b: 0.254717, a: 0}
 --- !u!195 &5753264966007676561
 NavMeshAgent:

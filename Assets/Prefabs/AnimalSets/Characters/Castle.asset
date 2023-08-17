@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Castle
   m_EditorClassIdentifier: 
   _animals:
-  - {fileID: 8105618792896743480, guid: aea27ca7a35042c419065833e8daf224, type: 3}
+  - {fileID: 398888642902281675, guid: 83905b55894130240b8d1a2922bf2198, type: 3}
   - {fileID: -821153614479298727, guid: 4077c14a264a5f14b8d66749500af8bd, type: 3}
   - {fileID: 6258706250923907306, guid: 2b742818ae249a64dad8ff314e13200c, type: 3}
-  - {fileID: 398888642902281675, guid: 83905b55894130240b8d1a2922bf2198, type: 3}
   - {fileID: -9167195540538671707, guid: 953667ada6702494d8d9c1a11b7c9142, type: 3}
+  - {fileID: 8105618792896743480, guid: aea27ca7a35042c419065833e8daf224, type: 3}

@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead16738e0268ea4eb87728cc76b17b9, type: 3}
   m_Name: Snow
   m_EditorClassIdentifier: 
-  _animals: []
+  _animals:
+  - {fileID: -7510892887794688516, guid: ecda232229c27c24085807cfa9846413, type: 3}
+  - {fileID: 7986417633665299394, guid: a288f100cb0bdf14bab3e3b66bc32c7c, type: 3}
+  - {fileID: 8772583667878370906, guid: f9d15d4cee5c2064eb008c4f341a3f9d, type: 3}
+  - {fileID: -9081065535334381596, guid: 296e0dc6c334322409a452294baac32d, type: 3}
+  - {fileID: -503572498907556521, guid: ab842ce7158391b4cae4a3c0d821eca1, type: 3}

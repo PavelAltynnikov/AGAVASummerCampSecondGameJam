@@ -9,14 +9,6 @@ public class AnimalSet : ScriptableObject
 
     public int Size => _animals.Count;
 
-    private void Awake()
-    {
-        for (var i=0; i< _animals.Count; i++)
-        {
-            _animals[i].SetID(i);
-        }
-    }
-
     public Animal GetAnimalTemplate(int index)
     {
         return _animals[index];

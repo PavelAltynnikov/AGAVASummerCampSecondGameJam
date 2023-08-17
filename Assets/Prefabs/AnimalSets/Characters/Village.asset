@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead16738e0268ea4eb87728cc76b17b9, type: 3}
   m_Name: Village
   m_EditorClassIdentifier: 
-  _animals: []
+  _animals:
+  - {fileID: -3730223078885084259, guid: 0b37c168ff788054692af766fd390574, type: 3}
+  - {fileID: -580860231838411494, guid: 5f9e38e7766d7994981d388050bc575a, type: 3}
+  - {fileID: -9167195540538671707, guid: 76a16bda73f41c64db9137a76bfcce45, type: 3}
+  - {fileID: 954487706610646240, guid: 0823cbdd4ec99244798d2e5dfa6a437b, type: 3}
+  - {fileID: 883087980853352032, guid: 1febeda40c1327244803fe6c25a17f91, type: 3}
