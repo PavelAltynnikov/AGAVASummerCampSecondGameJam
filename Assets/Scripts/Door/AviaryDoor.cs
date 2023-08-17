@@ -27,7 +27,9 @@ public class AviaryDoor : Door
         if (_task != null)
             StopCoroutine(_task);
 
+#if false
         _task = StartCoroutine(CloseLoop());
+#endif
     }
 
     private IEnumerator OpenLoop()
