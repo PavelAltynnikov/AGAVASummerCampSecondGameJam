@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead16738e0268ea4eb87728cc76b17b9, type: 3}
   m_Name: Forest
   m_EditorClassIdentifier: 
-  _animals: []
+  _animals:
+  - {fileID: 398888642902281675, guid: baaa401ea12049b4193a71586c94b582, type: 3}
+  - {fileID: -3730223078885084259, guid: 194be86527fa6834588c5af33fbe3162, type: 3}
+  - {fileID: 8105618792896743480, guid: 61fa09a34564e6944966b4019be9d93a, type: 3}
+  - {fileID: 954487706610646240, guid: e393de2cb6cddd0489dcdcc0c44ff208, type: 3}
+  - {fileID: 3677149936235673158, guid: bebc30b915d71024aa57e21b5cfdd9df, type: 3}
