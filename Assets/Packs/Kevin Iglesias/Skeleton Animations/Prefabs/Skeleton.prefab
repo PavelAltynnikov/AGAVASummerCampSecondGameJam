@@ -716,6 +716,8 @@ GameObject:
   - component: {fileID: 3288468337185982548}
   - component: {fileID: 8881890470304338478}
   - component: {fileID: -7419224937951586574}
+  - component: {fileID: 8850658412633005026}
+  - component: {fileID: -1107067307860979157}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -732,7 +734,7 @@ Transform:
   m_GameObject: {fileID: 2803820806472684270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.8, y: 2.8, z: 2.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8020212946955959257}
@@ -778,6 +780,39 @@ MonoBehaviour:
   walk: {fileID: 9100000, guid: 468e00031e6a05e498b55f8809463ffb, type: 2}
   idle: {fileID: 9100000, guid: f893d78148eef4541b5a78c4b4571608, type: 2}
   skeletonAnimator: {fileID: 8881890470304338478}
+--- !u!114 &8850658412633005026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2803820806472684270}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 1
+  _stancilID: 1
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &-1107067307860979157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2803820806472684270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56c0e1ae5cf34b24b02022f8264fd92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 0
+  _countColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2834232223631431927
 GameObject:
   m_ObjectHideFlags: 0
