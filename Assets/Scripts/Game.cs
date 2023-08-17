@@ -27,6 +27,7 @@ public class Game : MonoBehaviour
     [SerializeField] private LeanToken _levelToken;
     [SerializeField] private Transform _battlePoint;
     [SerializeField] private EnemyArmySpawner _enemySpawner;
+    [SerializeField] private ParticleSystem[] _clouds;
 
     private Aviary _lastAviary;
     private int _level;
@@ -205,6 +206,10 @@ public class Game : MonoBehaviour
         // TODO вот тут перед выводом UI надо запускать войска.
         StartCoroutine(nameof(MoveOurArmy), _battlePoint.position);
         _enemySpawner.MoveEnemyArmy(_battlePoint.position);
+        foreach (ParticleSystem cloud in _clouds)
+        {
+            cloud.Play();
+        }
 
         _doneScreen.Appear(_score.Value, _level);
         DB.AddScore(_score.Value);
