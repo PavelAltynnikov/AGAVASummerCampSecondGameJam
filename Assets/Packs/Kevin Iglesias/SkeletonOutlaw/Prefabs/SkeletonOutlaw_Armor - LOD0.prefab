@@ -2267,6 +2267,8 @@ GameObject:
   - component: {fileID: 4847383057965624}
   - component: {fileID: 95026947950475570}
   - component: {fileID: 1472905834090693916}
+  - component: {fileID: 3637671996826985111}
+  - component: {fileID: 6565112657315133938}
   m_Layer: 0
   m_Name: SkeletonOutlaw_Armor - LOD0
   m_TagString: Untagged
@@ -2332,6 +2334,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sekeletonAnimator: {fileID: 95026947950475570}
   attacksAnimationsNumber: 3
+--- !u!114 &3637671996826985111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809680881062764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 1
+  _stancilID: 1
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &6565112657315133938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809680881062764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56c0e1ae5cf34b24b02022f8264fd92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 2147483647
+  _countColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1813734462565108
 GameObject:
   m_ObjectHideFlags: 0
