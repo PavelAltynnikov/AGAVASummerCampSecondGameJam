@@ -25,6 +25,7 @@ public class Game : MonoBehaviour
     [SerializeField] private List<LevelType> _levelTypes;
     [SerializeField] private Leaderboard _totalScoreLeaderboard;
     [SerializeField] private LeanToken _levelToken;
+    [SerializeField] private Transform _battlePoint;
 
     private Aviary _lastAviary;
     private int _level;
@@ -199,6 +200,17 @@ public class Game : MonoBehaviour
             item.Play();
 
         yield return new WaitForSeconds(0.1f);
+
+        // TODO вот тут перед выводом UI надо запускать войска.
+        foreach (Aviary aviary in _aviaries)
+        {
+            foreach (Animal animal in aviary.Animals)
+            {
+                Vector3 targetPoint = _battlePoint.position + animal.transform.position;
+                animal.Go(targetPoint, 1f);
+            }
+        }
+
         _doneScreen.Appear(_score.Value, _level);
         DB.AddScore(_score.Value);
         DB.IncreaseLevel();

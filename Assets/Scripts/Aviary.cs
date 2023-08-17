@@ -23,6 +23,7 @@ public class Aviary : MonoBehaviour
     public ComboText ComboText => _comboText;
     public bool HasAnimals => _animals.Count > 0;
     public int AnimalID => _animals.Count > 0 ? _animals.Peek().ID : -100;
+    public Animal[] Animals => _animals.ToArray();
 
     public event UnityAction<Aviary> GotAnimal;
     public event UnityAction<List<Animal>> ReleasedAnimals;
